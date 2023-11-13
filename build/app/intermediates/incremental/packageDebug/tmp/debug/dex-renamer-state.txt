@@ -1,0 +1,4 @@
+#Mon Nov 13 18:32:49 KST 2023
+base.0=/Users/kimsungduck/Documents/workspaces/study/animation_gathering/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

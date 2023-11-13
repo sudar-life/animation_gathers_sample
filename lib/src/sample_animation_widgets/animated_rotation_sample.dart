@@ -1,0 +1,24 @@
+import 'package:animation_gathering/src/common/animation_state.dart';
+import 'package:flutter/material.dart';
+
+class AnimatedRotationSample extends StatelessWidget {
+  const AnimatedRotationSample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimationState(
+      builder: (state) => Center(
+        child: AnimatedRotation(
+          curve: Curves.easeInOut,
+          duration: const Duration(milliseconds: 1000),
+          turns: state ? 1 : 0.5,
+          child: Image.asset(
+            'assets/images/logo.jpg',
+            width: 50,
+            height: 50,
+          ),
+        ),
+      ),
+    );
+  }
+}
