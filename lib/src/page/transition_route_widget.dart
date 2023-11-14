@@ -2,7 +2,7 @@ import 'package:animation_gathering/src/common/transition_route_state.dart';
 import 'package:animation_gathering/src/page/next_page.dart';
 import 'package:animation_gathering/src/sample_transition_route_widget/fade_in_transition_route.dart';
 import 'package:animation_gathering/src/sample_transition_route_widget/radial_expansion_route.dart';
-import 'package:animation_gathering/src/sample_transition_route_widget/slide_wave_transition_route.dart';
+import 'package:animation_gathering/src/sample_transition_route_widget/move_middle_to_circle_transition_route.dart';
 import 'package:flutter/material.dart';
 
 class TransitionRouteWidget extends StatelessWidget {
@@ -47,12 +47,12 @@ class TransitionRouteWidget extends StatelessWidget {
                 Navigator.of(context).push(
                   TransitionRouteState(
                     page: const TargetPage(),
-                    transition: slideWaveTransition,
+                    transition: moveMiddleToCircleTransition,
                     duration: const Duration(seconds: 1),
                   ),
                 );
               },
-              child: const Text('WaveSliderTransition'),
+              child: const Text('MoveMiddleToCircleTransition'),
             )
           ],
         ),
