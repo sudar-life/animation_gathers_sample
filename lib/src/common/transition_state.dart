@@ -23,7 +23,7 @@ class _TransitionStateState extends State<TransitionState>
 
     _animation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
 
-    _controller.forward();
+    _controller.repeat();
   }
 
   @override

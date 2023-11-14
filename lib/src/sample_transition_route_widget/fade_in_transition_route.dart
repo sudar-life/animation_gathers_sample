@@ -4,7 +4,7 @@ Widget fadeInTransitionRoute(BuildContext context, Animation<double> animation,
     Animation<double> secondaryAnimation, Widget child) {
   var curvedAnimation = CurvedAnimation(
     parent: animation,
-    curve: Curves.elasticIn,
+    curve: Curves.easeIn,
   );
   return FadeTransition(
     opacity: curvedAnimation,
