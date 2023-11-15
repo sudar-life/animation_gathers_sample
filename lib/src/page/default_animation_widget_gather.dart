@@ -4,6 +4,7 @@ import 'package:animation_gathering/src/sample_animation_widgets/animated_physic
 import 'package:animation_gathering/src/sample_animation_widgets/animated_positioned_sample.dart';
 import 'package:animation_gathering/src/sample_animation_widgets/animated_rotation_sample.dart';
 import 'package:animation_gathering/src/sample_animation_widgets/animated_scale_sample.dart';
+import 'package:animation_gathering/src/sample_animation_widgets/animated_slide_sample.dart';
 import 'package:animation_gathering/src/sample_animation_widgets/animated_switcher_sample.dart';
 import 'package:animation_gathering/src/sample_animation_widgets/animation_align_sample.dart';
 import 'package:animation_gathering/src/sample_animation_widgets/animation_container_sample.dart';
@@ -65,6 +66,10 @@ class DefaultAnimationWidgetGather extends StatelessWidget {
           DefaultAnimationGatherView(
             title: 'AnimatedSwitcher',
             animatedWidget: AnimatedSwitcherSample(),
+          ),
+          DefaultAnimationGatherView(
+            title: 'AnimatedSlide',
+            animatedWidget: AnimatedSlideSample(),
           ),
         ],
       ),

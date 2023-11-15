@@ -1,5 +1,6 @@
 import 'package:animation_gathering/src/components/default_animation_gather_view.dart';
 import 'package:animation_gathering/src/sample_transition_widgets/align_transition_sample.dart';
+import 'package:animation_gathering/src/sample_transition_widgets/animated_icon_transiton_sample.dart';
 import 'package:animation_gathering/src/sample_transition_widgets/decorated_box_transition_sample.dart';
 import 'package:animation_gathering/src/sample_transition_widgets/fade_transition_sample.dart';
 import 'package:animation_gathering/src/sample_transition_widgets/positioned_transition_sample.dart';
@@ -55,6 +56,10 @@ class TransitionWidgetGather extends StatelessWidget {
           DefaultAnimationGatherView(
             title: 'RelativePositionedTransition',
             animatedWidget: RelativePositionedTransitionSample(),
+          ),
+          DefaultAnimationGatherView(
+            title: 'AnimatedIconSample',
+            animatedWidget: AnimatedIconSample(),
           ),
         ],
       ),
